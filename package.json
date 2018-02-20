@@ -1,0 +1,26 @@
+{
+  "name": "confetti-button",
+  "version": "1.0.0",
+  "description": "Simple SCVG/CSS confetti button",
+  "main": "index.ejs",
+    "dependencies": {
+    "Harp": "^0.1.0"
+  },
+  "scripts": {
+    "build": "harp compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessekorzan/confetti-button.git"
+  },
+  "keywords": [
+    "svg",
+    "css"
+  ],
+  "author": "jesse korzan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessekorzan/confetti-button/issues"
+  },
+  "homepage": "https://github.com/jessekorzan/confetti-button#readme"
+}
