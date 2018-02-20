@@ -6,10 +6,7 @@
   "dependencies": {
     "express": "3.x",
     "harp": "*"
-  },
-  "scripts": {
-    "build": "harp server https://confetti-button.netlify.com/"
-  },
+  }
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jessekorzan/confetti-button.git"
