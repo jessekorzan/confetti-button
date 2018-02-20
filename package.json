@@ -8,7 +8,7 @@
     "harp": "*"
   },
   "scripts": {
-    "build": "harp server"
+    "build": "harp server https://confetti-button.netlify.com/"
   },
   "repository": {
     "type": "git",
