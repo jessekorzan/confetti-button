@@ -9,4 +9,5 @@ Simple confetti button with only SVG and CSS
 Dev notes:
 - compiles to WWW via http://harpjs.com/
 - look at the www/assets/*.svg
+- whats an easy solve for touch/mobile?
 
