@@ -7,7 +7,7 @@
     "harp": "^0.25.0"
   },
   "scripts": {
-    "build": "npm run harp compile"
+    "build": "harp compile"
   },
   "repository": {
     "type": "git",
