@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Simple SCVG/CSS confetti button",
   "main": "index.ejs",
-    "dependencies": {
-    "Harp": "^0.1.0"
+  "dependencies": {
+    "Harp": "~0.25.0"
   },
   "scripts": {
     "build": "harp compile"
