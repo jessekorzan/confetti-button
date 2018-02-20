@@ -46,6 +46,8 @@ body {
     margin: 0 auto;
     cursor: pointer;
     display: inline-block;
+    user-select: none; 
+    -webkit-tap-highlight-color: transparent;
     polygon, path {
         transform-origin: center center;
         transition: all 260ms ease-in-out;
