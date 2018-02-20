@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,600,700');
+$font : "Heebo";
+$black : #2b2929;
+$blue : #0090ff;
+$white: #fff;
+$red: #c80722;
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    font-family: $font;
+    font-size: 82.5%;
+    color: $black;
+    * {
+        font-weight: normal;
+    }
+    a {
+        color: $blue;
+        text-decoration: none;
+    }
+}
+
+// ####################
+
+.card--wrapper {
+    font-size: 18px;
+    display: table;
+    width: 100%;
+    height: 100vh;
+    > .card {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+}
+
+.button--action {
+    position: relative;
+    width: 88px;
+    margin: 0 auto;
+    cursor: pointer;
+    display: inline-block;
+    polygon, path {
+        transform-origin: center center;
+        transition: all 260ms ease-in-out;
+    }
+    #trigger {
+        * {
+            fill : $white;
+            stroke: $blue;
+            stroke-width: 6px;
+        }
+    }
+    #reaction {
+        * {
+            opacity: 0;
+        }
+    }
+}
+.button--action:active #reaction {
+    * {
+        transform-origin: center center;
+        animation: reaction ease-in-out .75s infinite;
+    }
+    @for $i from 1 through 50 {
+        *:nth-child(#{$i}) {
+            animation-delay: #{$i * 50}ms;
+        }
+    }
+}
+
+.button--action:hover #trigger {
+    path {
+        fill : $blue;   
+        stroke : transparent; 
+        transform: scale(0.95);
+    }
+}
+
+.button--action:active #trigger {
+    path {
+        animation: pump ease-in .35s infinite;  
+          
+    }
+}
+
+@keyframes reaction {
+    0% {
+        transform: translateY(0) scale(0.5);
+        opacity: 1;
+        fill: $red;
+    }
+    100% {
+        transform: translateY(-140px) scale(2.5);
+        opacity: 0;
+        fill: $white;
+    }
+}
+
+@keyframes pump {
+    0% {
+        transform: scale(0.9);
+        fill: darken($blue, 15%);
+    }
+    50% {
+        transform: scale(1);
+        fill: $blue;
+    }    
+    100% {
+        transform: scale(0.9);
+        fill: darken($blue, 15%);
+    }
+    
+}
