@@ -4,7 +4,7 @@
   "description": "Simple SCVG/CSS confetti button",
   "main": "index.ejs",
   "dependencies": {
-    "Harp": "0.25.0"
+    "harp": "^0.25.0"
   },
   "scripts": {
     "build": "harp compile"
