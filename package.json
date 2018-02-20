@@ -8,7 +8,7 @@
     "harp": "*"
   },
   "scripts": {
-    "build": "harp compile"
+    "build": "harp serve"
   },
   "repository": {
     "type": "git",
